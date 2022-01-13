@@ -11,10 +11,10 @@
 #include "IObserver.h"
 
 class ISubject{
-public:
-    virtual void registerObserver(IObserver *ptr)=0;
-    virtual void unregisterObserver(IObserver *ptr)=0;
-    virtual void notifyObservers()=0;
+public: 
+    virtual void registerObserver(IObserver *ptr){};
+    virtual void unregisterObserver(IObserver *ptr){};
+    virtual void notifyObservers(){};
 };
 
 #endif /* ISubject_h */
